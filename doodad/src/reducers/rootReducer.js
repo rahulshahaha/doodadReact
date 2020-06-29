@@ -8,9 +8,9 @@ const initState = {
 
 const rootReducer = (state = initState, action) => {
     if(action.type === "UPDATE_ARTICLES"){
-        const articles = action.newArticles;
+        var newArticles = action.newArticles;
         return{
-            articles: [...articles]
+            articles: newArticles
         };
     }else{
         return state

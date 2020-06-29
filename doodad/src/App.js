@@ -34,15 +34,16 @@ class App extends React.Component {
 
 
 componentDidMount(){
-  var articleList = [];
+  
   db.collection('articles').onSnapshot(articles => {
-    console.log("snap")
+    var articleList = [];
     articles.docs.forEach(doc => {
       var articleInfo = doc.data();
       var id = {key: doc.id}
       articleInfo = {...articleInfo, ...id}
       articleList.push(articleInfo);
     })
+    //console.log(articleList)
     this.props.updateArticles(articleList)
   })
 }
