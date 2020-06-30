@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef00d5a684c7b9fd25aed4a6a51ebcc1",
+    "revision": "8d96c05e8d2d726ff827f7f49ac1f414",
     "url": "/doodadReact/index.html"
   },
   {
-    "revision": "365f2ffbceb625a2b2ce",
+    "revision": "0c845c192c0f4a46ae26",
     "url": "/doodadReact/static/css/main.ede0cfe0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/doodadReact/static/js/2.85a7c438.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "365f2ffbceb625a2b2ce",
-    "url": "/doodadReact/static/js/main.be30f72f.chunk.js"
+    "revision": "0c845c192c0f4a46ae26",
+    "url": "/doodadReact/static/js/main.608a0bf7.chunk.js"
   },
   {
     "revision": "954b8c6d11fb392535a5",
