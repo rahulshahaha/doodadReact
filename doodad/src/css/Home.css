@@ -32,6 +32,14 @@
     margin-right: auto;
 }
 
+.Home .articleListHeader h2{
+    margin-bottom: 0;
+}
+
+.Home .articleListHeader p{
+    margin-top: 0;
+}
+
 
 
 .Home .highlightText{

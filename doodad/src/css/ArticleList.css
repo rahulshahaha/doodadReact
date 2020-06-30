@@ -1,0 +1,48 @@
+.ArticleList{
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ArticleList .articleTitle{
+    font-size: 25px;
+}
+
+.ArticleList a, a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.ArticleList a:hover,a:active{
+    text-decoration: underline;
+}
+
+.ArticleList .listedArticle{
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .ArticleList{
+        width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .ArticleList{
+        width: 75%;
+    }
+    .ArticleList p{
+        font-size: 2vmax;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ArticleList{
+        width: 95%;
+    }
+    .ArticleList p{
+        font-size: 3vmax;
+    }
+  }

@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/Home.css"
-import Articles from './Articles';
+import ArticleList from './ArticleList';
 
 
 
@@ -18,8 +18,9 @@ render(){
         </section>
         <div className="articleListHeader">
           <h2>Articles</h2>
+          <p>Our Latest Articles</p>
         </div>
-        <Articles></Articles>
+        <ArticleList></ArticleList>
       </div>
     );
   }
