@@ -45,7 +45,7 @@ class ArticleList extends React.Component {
                     key: s.key
                 }
             }}>{s.title}</Link>
-            <p>{s.lead}</p>
+            <p className="leadText">{s.lead}</p>
             </div>
             );
         });

@@ -21,6 +21,10 @@
     margin-bottom: 50px;
 }
 
+.ArticleList p.leadText{
+    color: #8f8f8f;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .ArticleList{
