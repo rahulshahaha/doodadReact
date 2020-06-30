@@ -26,6 +26,7 @@
 
 .Article h1{
     margin-bottom: 3px;
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
