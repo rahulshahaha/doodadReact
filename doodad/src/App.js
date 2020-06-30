@@ -1,5 +1,6 @@
 import React from 'react';
 import "firebase/firestore";
+import "firebase/storage";
 import * as firebase from "firebase/app";
 import "./css/App.css"
 import Nav from "./components/Nav"
@@ -26,7 +27,16 @@ import { connect } from 'react-redux'
 firebase.initializeApp(firebaseConfig);
 //const auth = firebase.auth();
 const db = firebase.firestore();
+// const storage = firebase.storage();
 
+// var storageRef = storage.ref();
+// //var imagesRef = storageRef.child('Images');
+// var spaceRef = storageRef.child('Images/VTIQChart.png').getDownloadURL().then(function(url) {
+//   console.log(url)
+// }).catch(function(error) {
+//   // Handle any errors
+// });
+// console.log(spaceRef.fullPath)
 
 
 
@@ -55,7 +65,7 @@ render(){
           <Nav></Nav>
           <Route exact path="/" component={Home} />
           <Route exact path="/articles" component={Articles} />
-          <Route path="/articles/:article_id" component={Article} />
+          <Route exact path="/articles/:article_id" component={Article} />
         </div>
       </BrowserRouter>
     );
