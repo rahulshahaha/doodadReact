@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/doodadReact/precache-manifest.84d1eb80149be57ac0ea2e3c45f362df.js"
+  "/doodadReact/precache-manifest.2d9c2190fbb606fb5e6916036c1868eb.js"
 );
 
 self.addEventListener('message', (event) => {
