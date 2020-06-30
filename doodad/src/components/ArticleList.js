@@ -35,6 +35,14 @@ class ArticleList extends React.Component {
         });
 
         var articleList = articles.map(function(s){
+            var date = ""
+            var ISODate = ""
+            if(s.createdDate !== undefined){
+                date = s.createdDate.toDate();
+                date = ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear();
+                ISODate = new Date(date);
+            }
+
 
             var link = "/articles/" + s.key
             return (
@@ -45,6 +53,7 @@ class ArticleList extends React.Component {
                     key: s.key
                 }
             }}>{s.title}</Link>
+            <time dateTime={ISODate}>{date}</time>
             <p className="leadText">{s.lead}</p>
             </div>
             );

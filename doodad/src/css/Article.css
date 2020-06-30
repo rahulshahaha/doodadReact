@@ -24,6 +24,9 @@
     border-radius: 5px;
 }
 
+.Article h1{
+    margin-bottom: 3px;
+}
 
 @media only screen and (max-width: 1200px) {
     .Article{

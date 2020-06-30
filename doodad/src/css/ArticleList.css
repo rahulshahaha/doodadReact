@@ -23,6 +23,14 @@
 
 .ArticleList p.leadText{
     color: #8f8f8f;
+    font-size: 16px;
+}
+
+.ArticleList time{
+    display: block;
+    color: #8f8f8f;
+    font-size: 16px;
+    margin-top: 3px;
 }
 
 
