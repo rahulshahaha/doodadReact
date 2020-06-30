@@ -1,0 +1,36 @@
+.Articles{
+    margin-top: 50px;
+}
+
+.Articles h1{
+    width: 50%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .Articles h1{
+        width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .Articles h1{
+        width: 75%;
+    }
+    .ArticleList p{
+        font-size: 2vmax;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Articles h1{
+        width: 95%;
+    }
+    .ArticleList p{
+        font-size: 3vmax;
+    }
+  }

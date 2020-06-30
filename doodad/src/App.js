@@ -5,7 +5,7 @@ import * as firebase from "firebase/app";
 import "./css/App.css"
 import Nav from "./components/Nav"
 import Home from './components/Home';
-import ArticleList from './components/ArticleList';
+import Articles from './components/Articles';
 import Article from './components/Article';
 import { BrowserRouter, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
@@ -64,7 +64,7 @@ render(){
         <div className="App">
           <Nav></Nav>
           <Route exact path="/" component={Home} />
-          <Route exact path="/articles" component={ArticleList} />
+          <Route exact path="/articles" component={Articles} />
           <Route exact path="/articles/:article_id" component={Article} />
         </div>
       </BrowserRouter>
