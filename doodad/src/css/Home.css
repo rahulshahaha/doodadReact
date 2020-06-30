@@ -1,3 +1,76 @@
 .Home{
-    margin-top: 50px;
+    margin-top: 40px;
+    /* background-image:url(../images/intro-bg-mobile.jpeg);
+    background-size: 100% 100%; */
 }
+
+.Home .coverPhoto{
+    background: #111 url(../images/intro-bg-mobile.jpeg) no-repeat center;
+    height: 500px;
+    width: 100%
+}
+
+.Home .titleText{
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.Home .titleText h2{
+    font-size: 53px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+}
+
+.Home .articleListHeader{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.Home .highlightText{
+    background-color: #C0C0C0 !important;
+ }
+
+
+ @media only screen and (max-width: 1200px) {
+    .Home .titleText h2{
+        font-size: 53px;
+    }
+    .Home .titleText{
+        width: 75%;
+    }
+    .Home .articleListHeader{
+        width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .Home .titleText h2{
+        font-size: 53px;
+    }
+    .Home .titleText{
+        width: 100%;
+    }
+    .Home .articleListHeader{
+        width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Home .titleText h2{
+        font-size: 42px;
+    }
+    .Home .titleText{
+        width: 100%;
+    }
+    .Home .articleListHeader{
+        width: 95%;
+    }
+  }
