@@ -9,6 +9,7 @@ import Articles from './components/Articles';
 import Article from './components/Article';
 import { BrowserRouter, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
+import ScrollToTop from './components/ScrollToTop';
 
 
   // Your web app's Firebase configuration
@@ -61,12 +62,14 @@ componentDidMount(){
 render(){
     return (
       <BrowserRouter>
-        <div className="App">
-          <Nav></Nav>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/articles" component={Articles} />
-          <Route exact path="/articles/:article_id" component={Article} />
-        </div>
+        <ScrollToTop>
+          <div className="App">
+            <Nav></Nav>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/articles" component={Articles} />
+            <Route exact path="/articles/:article_id" component={Article} />
+          </div>
+        </ScrollToTop>
       </BrowserRouter>
     );
   }

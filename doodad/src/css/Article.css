@@ -13,7 +13,15 @@
     font-style: italic;
 }
 
+.Article a,.Article a:visited{
+    color: black;
+    text-decoration: underline;
+}
 
+.Article a:hover,.Article a:active{
+    text-decoration: underline;
+    color: red;
+}
 
 .Article img{
     display: block;
