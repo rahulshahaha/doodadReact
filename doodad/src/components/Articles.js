@@ -12,7 +12,7 @@ class Articles extends React.Component {
 
 
 render(){
-
+    document.title = "Doodad Capital Articles"
     return (
       <div className="Articles">
         <h1>Articles</h1>

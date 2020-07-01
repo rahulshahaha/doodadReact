@@ -9,6 +9,7 @@ class Home extends React.Component {
 
 
 render(){
+    document.title = "Doodad Capital"
     return (
       <div className="Home">
         <section className="coverPhoto">
