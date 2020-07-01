@@ -12,7 +12,7 @@ render(){
     return (
       <div className="Nav">
         <ul>
-          <li><a className="navLogoLink" href="/"><img alt="logo" href="/" className="navLogo" src="https://firebasestorage.googleapis.com/v0/b/doodad-capital.appspot.com/o/Images%2FstraightLogo.png?alt=media&token=3320a0eb-b351-427c-972a-89eabf75a59d"></img></a></li>
+          <li><NavLink className="navLogoLink" to="/"><img alt="logo" href="/" className="navLogo" src="https://firebasestorage.googleapis.com/v0/b/doodad-capital.appspot.com/o/Images%2FstraightLogo.png?alt=media&token=3320a0eb-b351-427c-972a-89eabf75a59d"></img></NavLink></li>
           <li><NavLink exact to="/">Home</NavLink></li>
           <li><NavLink to="/articles">Articles</NavLink></li>
         </ul>

@@ -1,8 +1,6 @@
 const initState = {
     articles: [
-        {key: 1, title: "ggg", content: "sfsdfdsf"},
-        {key: 2, title: "gdffgg", content: "rgkrdpo"},
-        {key: 3, title: "gfsgg", content: "s;flksd;fl"}
+        {key: 1, title: "Title", content: "Content"},
     ]
 }
 
