@@ -12,6 +12,7 @@ import { connect } from 'react-redux'
 import ScrollToTop from './components/ScrollToTop';
 
 
+
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAzBrqlSoBpuAhVz8M2qqNyH5Hx7BW8SNU",

@@ -1,6 +1,7 @@
 import React from 'react';
 import "../css/Article.css"
 import {connect} from 'react-redux'
+import Description from './Description';
 //import dompurify from 'dompurify'
 
 
@@ -9,16 +10,18 @@ class Article extends React.Component {
 
 
 render(){
+
     var title = "Doodad Capital"
     title = this.props.article === undefined ? "Cant find article" : this.props.article.title;
-    document.title = title;
     var content = this.props.article === undefined ? "" : this.props.article.content;
     var date = this.props.article === undefined ? "" : this.props.article.createdDate.toDate()
     date = this.props.article === undefined ? "" : ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear();
     var ISODate = this.props.article === undefined ? "" : new Date(date);
+    var lead = this.props.article === undefined ? "" : this.props.article.lead;
 
     return (
       <div className="Article">
+        <Description title={title} description={lead} type="article"></Description>
         <h1>{title}</h1>
         <time dateTime={ISODate}>{date}</time>
         <div dangerouslySetInnerHTML={{ __html: content }} />
