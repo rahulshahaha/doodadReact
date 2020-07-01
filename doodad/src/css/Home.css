@@ -33,13 +33,22 @@
 }
 
 .Home .articleListHeader h2{
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
-.Home .articleListHeader p{
-    margin-top: 0;
+
+.Home .ArticleList{
+    margin-top: 20px;
 }
 
+.Home .articleListHeader a,.Home .articleListHeader a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.Home .articleListHeader a:hover,.Home .articleListHeader a:active{
+    text-decoration: underline;
+}
 
 
 .Home .highlightText{

@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/Home.css"
 import ArticleList from './ArticleList';
 import Description from './Description'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -19,8 +20,8 @@ render(){
         </div>
         </section>
         <div className="articleListHeader">
-          <h2>Articles</h2>
-          <p>Our Latest Articles</p>
+          <h2>Latest Articles</h2>
+          <NavLink to="/articles">See all articles</NavLink>
         </div>
         <ArticleList></ArticleList>
       </div>
