@@ -39,8 +39,8 @@ class ArticleList extends React.Component {
             var ISODate = ""
             if(s.createdDate !== undefined){
                 date = s.createdDate.toDate();
+                ISODate = date.toISOString();
                 date = ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear();
-                ISODate = new Date(date);
             }
 
 
