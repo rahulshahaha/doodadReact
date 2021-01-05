@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/Article.css"
 import {connect} from 'react-redux'
 import Description from './Description';
+import PriceComp from './PriceComp';
 //import dompurify from 'dompurify'
 
 
@@ -24,6 +25,7 @@ render(){
         <Description title={title} description={lead} type="article"></Description>
         <h1>{title}</h1>
         <time dateTime={ISODate}>{date}</time>
+        <PriceComp articleID={this.props.match.params.article_id}></PriceComp>
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </div>
     );
